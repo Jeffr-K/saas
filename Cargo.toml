@@ -1,0 +1,21 @@
+[package]
+name = "meshed-enterprise-platform"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+members = [
+    "meshed",
+    "meshed-iam",
+    "meshed-payment",
+    "meshed-batch",
+    "meshed-cli",
+    "meshed-statistics",
+    "meshed-file",
+]
+
+[[bin]]
+name = "meshed"
+path = "meshed/src/main.rs"
+
+[dependencies]
